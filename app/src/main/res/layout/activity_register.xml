@@ -6,9 +6,41 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="@android:color/white"
     tools:context=".ui.activity.RegisterActivity">
 
 
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/regBack"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:tint="@color/white"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="Back"
+        android:src="@drawable/baseline_arrow_back_24" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"> <!-- Added marginBottom to create a gap -->
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo1"
+            android:contentDescription="Gym Logo"/>
+
+    </LinearLayout>
+
+    <!-- Username Field -->
     <EditText
         android:id="@+id/editRegisterUsername"
         android:layout_width="match_parent"
@@ -16,10 +48,11 @@
         android:hint="Username"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="#333"
+        android:textColorHint="#999"/>
 
-
-
+    <!-- Email Address Field -->
     <EditText
         android:id="@+id/editEmail"
         android:layout_width="match_parent"
@@ -27,9 +60,11 @@
         android:hint="Email Address"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="#333"
+        android:textColorHint="#999"/>
 
-    <!-- Username Field -->
+    <!-- Address Field -->
     <EditText
         android:id="@+id/editAddress"
         android:layout_width="match_parent"
@@ -37,8 +72,11 @@
         android:hint="Address"
         android:inputType="text"
         android:minHeight="48dp"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="#333"
+        android:textColorHint="#999"/>
 
+    <!-- Password Field -->
     <EditText
         android:id="@+id/editPassword"
         android:layout_width="match_parent"
@@ -46,7 +84,9 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="#333"
+        android:textColorHint="#999"/>
 
     <!-- Confirm Password Field -->
     <EditText
@@ -56,7 +96,9 @@
         android:hint="Confirm Password"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="#333"
+        android:textColorHint="#999"/>
 
     <!-- Register Button -->
     <Button
@@ -64,20 +106,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@android:color/holo_green_dark"
         android:textColor="@android:color/white"
-        android:padding="10dp" />
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"/>
 
     <!-- Already Have an Account Text -->
     <TextView
         android:id="@+id/textViewAlreadyAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Already have an account? Login here!"
+        android:text="Hello Hi, Bye Bye!"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="@android:color/holo_red_light"
         android:padding="10dp"
-        android:layout_marginTop="20sp" />
+        android:layout_marginTop="20sp"/>
+
+
+
 
 </LinearLayout>
