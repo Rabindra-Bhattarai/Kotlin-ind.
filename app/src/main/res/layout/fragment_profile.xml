@@ -79,7 +79,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Admin since January 2024"
+                    android:text="Admin since 2 March 2024"
                     android:textColor="@color/red"
                     android:textSize="16sp" />
 
