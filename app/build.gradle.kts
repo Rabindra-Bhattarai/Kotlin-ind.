@@ -55,7 +55,6 @@ dependencies {
     implementation("com.squareup.picasso:picasso:2.8")
     testImplementation("org.mockito:mockito-core:5.6.0")
     testImplementation("org.mockito:mockito-inline:3.12.4")
-    androidTestImplementation("org.mockito:mockito-kotlin:3.2.0")
     androidTestImplementation("androidx.test:runner:1.2.0")
     androidTestImplementation("androidx.test:rules:1.2.0")
 

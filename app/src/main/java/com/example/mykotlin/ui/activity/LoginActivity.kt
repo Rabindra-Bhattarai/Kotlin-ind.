@@ -2,11 +2,13 @@ package com.example.mykotlin.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.transition.Visibility
 import com.example.mykotlin.R
 import com.example.mykotlin.UserViewModel
 import com.example.mykotlin.databinding.ActivityLoginBinding
@@ -62,6 +64,8 @@ class LoginActivity : AppCompatActivity() {
                     startActivity(intent)
                     finish()  // Close login activity
                 } else {
+                    binding.displayLogin.text ="login failed"
+                    binding.displayLogin.visibility = View.GONE
                     // Login failed
                     Toast.makeText(this, "Login failed: $message", Toast.LENGTH_LONG).show()
                 }
