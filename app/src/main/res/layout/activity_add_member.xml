@@ -58,7 +58,7 @@
         android:id="@+id/etName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:hint="Full Name"
         android:textColorHint="@color/gray"
         android:layout_marginTop="16dp"
         android:inputType="textPersonName"
