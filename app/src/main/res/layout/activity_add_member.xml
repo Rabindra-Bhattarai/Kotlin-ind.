@@ -90,7 +90,7 @@
         android:id="@+id/etPhone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Phone"
+        android:hint="Phone Number"
         android:textColorHint="@color/gray"
         android:layout_marginTop="16dp"
         android:inputType="phone"
